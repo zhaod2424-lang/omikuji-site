@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>運命のおみくじ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 背景の装飾 -->
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+
+    <main class="container">
+
+        <!-- ヘッダー -->
+        <header>
+            <p class="english-title">YOUR FORTUNE</p>
+
+            <h1>運命のおみくじ</h1>
+
+            <p class="subtitle">
+                今日のあなたを、そっと占います。
+            </p>
+        </header>
+
+
+        <!-- おみくじカード -->
+        <section class="fortune-card">
+
+            <div class="card-top">
+                <span>今日の運勢</span>
+                <span id="date"></span>
+            </div>
+
+
+            <div class="fortune-main">
+
+                <p class="fortune-label">YOUR RESULT</p>
+
+                <div id="result">？</div>
+
+                <p id="message">
+                    下のボタンを押して<br>
+                    今日の運命を引いてみよう。
+                </p>
+
+            </div>
+
+
+            <!-- 詳細結果 -->
+            <div id="details" class="details hidden">
+
+                <div class="detail">
+                    <span>💗 恋愛運</span>
+                    <p id="love"></p>
+                </div>
+
+                <div class="detail">
+                    <span>💼 仕事・勉強運</span>
+                    <p id="work"></p>
+                </div>
+
+                <div class="detail">
+                    <span>💰 金運</span>
+                    <p id="money"></p>
+                </div>
+
+                <div class="detail">
+                    <span>🍀 健康運</span>
+                    <p id="health"></p>
+                </div>
+
+                <div class="detail">
+                    <span>🎨 ラッキーカラー</span>
+                    <p id="color"></p>
+                </div>
+
+                <div class="detail">
+                    <span>✨ ラッキーアイテム</span>
+                    <p id="item"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ボタン -->
+        <button id="drawButton">
+            <span>おみくじを引く</span>
+            <span class="arrow">→</span>
+        </button>
+
+
+        <!-- 下部 -->
+        <p class="bottom-text">
+            今日という一日が、少しだけ特別になりますように。
+        </p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
